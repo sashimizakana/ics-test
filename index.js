@@ -1,15 +1,11 @@
 const ics = require("ics");
+const dayjs = require("dayjs");
 
 const { error, value } = ics.createEvents([
   {
-    title: "Lunch",
-    start: [2018, 1, 15, 12, 15],
-    duration: { minutes: 45 },
-  },
-  {
-    title: "Dinner",
-    start: [2018, 1, 15, 12, 15],
-    duration: { hours: 1, minutes: 30 },
+    title: "日本語のイベント",
+    start: dayjs("2026-04-02T21:23:00+09:00").valueOf(),
+    end: dayjs("2026-04-02T22:23:00+09:00").valueOf(),
   },
 ]);
 
